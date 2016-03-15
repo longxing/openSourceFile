@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.asiainfo.android.wmm.demo"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="9"/>
+
+    <!--SDK Permission-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--SDK Permission-->
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+
+        <!--SDK Activity-->
+        <activity
+                android:name="com.asiainfo.android.wo.music.mall.activity.PreOrderActivity"
+                android:exported="true"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:launchMode="singleTop"/>
+        <activity
+                android:name="com.asiainfo.android.wo.music.mall.activity.BindMemberActivity"
+                android:exported="true"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:launchMode="singleTop"
+                />
+
+        <!--Demo Activity-->
+        <activity android:name="com.asiainfo.android.wmm.demo.MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--使用微信支付必须定义, .wxapi.WXPayEntryActivity必须位于manifest定义的package下-->
+        <activity
+                android:name="com.asiainfo.android.wmm.demo.wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:launchMode="singleTop"/>
+        <!--使用微信支付必须定义-->
+
+        <activity
+                android:name="com.asiainfo.android.wmm.demo.activity.ProductListActivity"
+                android:label="产品列表界面">
+        </activity>
+        <activity
+                android:name="com.asiainfo.android.wmm.demo.activity.ShowRightActivity"
+                android:label="权益展示页面">
+        </activity>
+        <activity
+                android:name="com.asiainfo.android.wmm.demo.activity.HistoryOrderActivity"
+                android:label="历史订单界面">
+        </activity>
+        <activity
+                android:name="com.asiainfo.android.wmm.demo.activity.UpdateProductActivity"
+                android:label="升级产品界面">
+        </activity>
+    </application>
+</manifest>
