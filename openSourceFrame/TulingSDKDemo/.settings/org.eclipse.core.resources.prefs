@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//assets/wakeup.cfg=UTF-8
+encoding//src/com/example/turing/Listener/MyBasePublicElement.java=GBK
+encoding//src/com/example/turing/Listener/MyHttpRequestWatcher.java=GBK
+encoding//src/com/example/turing/Listener/MyInitListener.java=GBK
+encoding//src/com/example/turing/Listener/MyVoiceRecognizeListener.java=GBK
+encoding//src/com/example/turing/sdkdemo/MainActivity.java=GBK
+encoding//src/com/example/turing/sdkdemo/MyHandler.java=GBK
+encoding/<project>=UTF-8
